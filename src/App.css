@@ -1,0 +1,53 @@
+Copy code
+.App {
+  text-align: center;
+  height: 100vh; /* set the height of the App container to the full height of the viewport */
+  overflow: hidden; /* hide any overflow */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100%; /* set the min-height to 100% to fill the App container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.deck {
+  width: 100px;
+  height: 140px;
+  background-color: #009B3A;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+
+.table {
+  width: 300px;
+  height: 400px;
+  background-color: #009B3A;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+
+@media only screen and (max-height: 600px) {
+  .App {
+    height: 90vh; /* reduce the height of the App container */
+  }
+  .App-header {
+    min-height: 90%; /* reduce the min-height of the App-header container */
+  }
+  .deck, .table {
+    height: 50%; /* reduce the height of the deck and table containers */
+  }
+}
